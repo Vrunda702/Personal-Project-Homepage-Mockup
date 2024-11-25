@@ -1,71 +1,134 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-  <title>Pannas Fashion Boutique</title>
-  <meta charset="UTF-8">
-  <style>
-    /* General Body Style */
-    body {
-      background-color: lightpink;
-      margin: 0;
-      font-family: Verdana, sans-serif;
-    }
+<title>Pannas Fashion Boutique</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
+<meta charset="UTF-8">
+<style>
+  
+/* General body styling */
+body {
+  background-color: #ffd8d4;
+  margin: 0;
+  padding-top: 45px; 
+  font-family: "Sofia", sans-serif;
+}
 
-    /* Navigation Bar Styles */
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333; /* Background color of the nav bar */
-      border: 3px solid black; /* Adds a black border around the nav bar */
-    }
+/* Header section styling */
+.header {
+  background-image: url('homepage top.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 400px;
+  width: 100%;
+}
 
-    li {
-      float: left;
-    }
+/* Styling for the "Home" link */
+.home-link {
+  color: #b46d52;
+  font-weight: bold;
+}
 
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+/* Font and styling for the main title */
+h1 {
+  color: white;
+  text-align: center;
+  margin: 0; 
+  padding-top: 90px;
+  font-size: 50px;
+}
 
-    li a:hover:not(.active) {
-      background-color: #111;
-    }
+/* Font and styling for the subheading */
+h2 { 
+  color: #b46d52;
+  font-family: "Playfair Display", serif;
+}
 
-    .active {
-      background-color: #04AA6D;
-    }
+/* Navigation bar styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffb5bb;
+  display: flex;
+  justify-content: flex-end; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-    /* Title (h1) Styling */
-    h1 {
-      color: white;
-      text-align: center;
-      margin-top: 20px; /* Adds space between the nav bar and title */
-    }
+li { 
+  margin-left: 20px;
+}
 
-    p {
-      font-size: 20px;
-    }
-  </style>
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none; 
+}
+
+li a:hover:not(.active) {
+  background-color: pink;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Styling for the squares */
+.squares-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #b46d52;
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
+  
+<!-- Nav Bar -->
+<ul>
+  <li><a class="home-link" href="#home">Home</a></li>
+  <li><a href="#collection">Collection</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#checkout">Checkout</a></li>
+</ul>
+  
+<!-- Header Section -->
+<div class="header">
+  <h1>Pannas Fashion <br> Boutique</h1>
+</div>
+  
+<!-- Subheading -->
+<h2 style="text-align: center;">What We Offer</h2>
 
-  <!-- Navigation Bar -->
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#collection">Collection</a></li>
-    <li><a href="#checkout">Checkout</a></li>
-    <li><a href="#about" class="active">About</a></li>
-  </ul>
-
-  <!-- Title -->
-  <h1>Pannas Fashion Boutique</h1>
+<!-- Squares Section -->
+<div class="squares-container">
+  <div class="square">Square 1</div>
+  <div class="square">Square 2</div>
+  <div class="square">Square 3</div>
+</div>
 
 </body>
 </html>
+
 
