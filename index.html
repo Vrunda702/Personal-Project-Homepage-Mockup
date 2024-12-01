@@ -1,134 +1,201 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-<title>Pannas Fashion Boutique</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
-<meta charset="UTF-8">
-<style>
-  
-/* General body styling */
-body {
-  background-color: #ffd8d4;
-  margin: 0;
-  padding-top: 45px; 
-  font-family: "Sofia", sans-serif;
-}
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair Display">
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      font-family: "Sofia", sans-serif;
+    }
 
-/* Header section styling */
-.header {
-  background-image: url('homepage top.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; 
-  height: 400px;
-  width: 100%;
-}
+    .header {
+      background-image: url('about-header.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-/* Styling for the "Home" link */
-.home-link {
-  color: #b46d52;
-  font-weight: bold;
-}
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      font-family: "Playfair Display", serif;
+    }
 
-/* Font and styling for the main title */
-h1 {
-  color: white;
-  text-align: center;
-  margin: 0; 
-  padding-top: 90px;
-  font-size: 50px;
-}
+    .nav-bar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #b46d52;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 
-/* Font and styling for the subheading */
-h2 { 
-  color: #b46d52;
-  font-family: "Playfair Display", serif;
-}
+    .nav-bar li {
+      margin: 0 20px;
+    }
 
-/* Navigation bar styling */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ffb5bb;
-  display: flex;
-  justify-content: flex-end; 
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+    .nav-bar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
 
-li { 
-  margin-left: 20px;
-}
+    .nav-bar li a:hover {
+      background-color: #d7a69f;
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none; 
-}
+    .content {
+      max-width: 800px;
+      margin: 100px auto 50px auto;
+      text-align: center;
+    }
 
-li a:hover:not(.active) {
-  background-color: pink;
-}
+    .content img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
 
-.active {
-  background-color: #04AA6D;
-}
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
 
-/* Styling for the squares */
-.squares-container {
-  display: flex;
-  justify-content: center;
-  margin: 50px auto;
-  gap: 20px;
-}
+    .links {
+      margin: 30px 0;
+    }
 
-.square {
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  color: #b46d52;
-  text-align: center;
-}
+    .links a {
+      color: #b46d52;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-</style>
+    .links a:hover {
+      color: #d7a69f;
+    }
+
+    table {
+      margin: 30px auto;
+      border-collapse: collapse;
+      width: 80%;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table, th, td {
+      border: 1px solid #b46d52;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f7cac9;
+      color: #b46d52;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0;
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   
-<!-- Nav Bar -->
-<ul>
-  <li><a class="home-link" href="#home">Home</a></li>
-  <li><a href="#collection">Collection</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#checkout">Checkout</a></li>
-</ul>
-  
-<!-- Header Section -->
-<div class="header">
-  <h1>Pannas Fashion <br> Boutique</h1>
-</div>
-  
-<!-- Subheading -->
-<h2 style="text-align: center;">What We Offer</h2>
+  <!-- Header -->
+  <div class="header">
+    <h1>About Me</h1>
+  </div>
 
-<!-- Squares Section -->
-<div class="squares-container">
-  <div class="square">Square 1</div>
-  <div class="square">Square 2</div>
-  <div class="square">Square 3</div>
-</div>
+  <!-- Navigation Bar -->
+  <ul class="nav-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="profile-picture.jpg" alt="My Profile Picture">
+    <p>
+      Hello! My name is [Your Name], and I’m passionate about design, technology, and creativity. This website is a 
+      reflection of my journey, showcasing my interests and the work I’ve done in various fields. Whether it’s coding, 
+      photography, or crafting unique projects, I’m always eager to learn and grow.
+    </p>
+
+    <p>
+      Outside of work, I enjoy exploring nature, reading about history, and experimenting with new recipes. Feel free 
+      to browse through this site to learn more about me and my projects.
+    </p>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://www.example.com" target="_blank">Visit My Blog</a><br>
+      <a href="mailto:yourname@uwaterloo.ca">Email Me</a>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <h2>Skills</h2>
+  <table>
+    <tr>
+      <th>Skill</th>
+      <th>Experience</th>
+      <th>Proficiency</th>
+    </tr>
+    <tr>
+      <td>HTML &amp CSS</td>
+      <td>3 Years</td>
+      <td>Expert</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>2 Years</td>
+      <td>Intermediate</td>
+    </tr>
+    <tr>
+      <td>Photography</td>
+      <td>5 Years</td>
+      <td>Advanced</td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 [Your Name]. All rights reserved.
+  </footer>
 
 </body>
 </html>
+
+
 
 
