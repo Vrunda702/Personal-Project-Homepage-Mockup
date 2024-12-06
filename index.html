@@ -1,141 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-  <title>Contact Us - Pannas Fashion Boutique</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Sofia", sans-serif;
-      background-color: #fff5f8;
-    }
+    <title>Contact Us - Pannas Fashion Boutique</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Playfair+Display">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #ffe5ec;
+            margin: 0;
+            padding-top: 45px; 
+            font-family: "Sofia", sans-serif;
+        }
 
-    /* Navigation Bar */
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      background-color: #ffc2d1;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffb5bb;
+            display: flex;
+            justify-content: flex-end; 
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
 
-    li {
-      margin: 0 20px;
-    }
+        li { 
+            margin-left: 20px;
+        }
 
-    li a {
-      text-align: center;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 10px 20px;
-      display: inline-block;
-    }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none; 
+            font-size: 20px;
+        }
 
-    li a:hover {
-      background-color: #ffa1b5;
-      border-radius: 5px;
-    }
+        li a:hover:not(.active) {
+            background-color: pink;
+        }
 
-    .active {
-      background-color: #f78fb3;
-    }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
 
-    /* Header Section */
-    .header {
-      text-align: center;
-      padding: 60px 20px;
-      background: rgba(255, 194, 209, 0.5);
-    }
+        h1 {
+            color: #b46d52;
+            font-size: 50px;
+        }
 
-    .header h1 {
-      font-family: "Playfair Display", serif;
-      font-size: 48px;
-      color: #944d6b;
-      margin: 0;
-    }
+        .contact-container {
+            margin: 50px auto;
+            width: 80%; /* Set a width for the container */
+        }
 
-    /* Content Section */
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      text-align: center;
-      overflow: hidden; /* Clear floats */
-    }
+        .contact-info {
+            background-color: #F7CAC9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            color: #b46d52;
+            margin: 10px 0; /* Space between rectangles */
+        }
 
-    .info-box {
-      background-color: white;
-      border: 1px solid #ffc2d1;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-      padding: 20px;
-      width: 30%; /* Fixed width for floating layout */
-      float: left; /* Float each box to the left */
-    }
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
 
-    .info-box p {
-      font-family: "Sofia", sans-serif;
-      font-size: 18px;
-      color: #6b4d57;
-      margin: 10px 0;
-    }
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
 
-    .info-box a {
-      color: #944d6b;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        .contact-info a {
+            color: #b46d52;
+            text-decoration: none;
+        }
 
-    .info-box a:hover {
-      color: #6b4d57;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .info-box {
-        float: none; /* Cancel float for small screens */
-        width: 90%; /* Full width for smaller devices */
-        margin: 20px auto;
-      }
-    }
-  </style>
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <ul>
+
+<!-- Nav Bar -->
+<ul>
     <li><a href="https://vrunda702.github.io/Personal-Website-Homepage/">Home</a></li>
-    <li><a href="https://vrunda702.github.io/Personal-Website-Collection/">Collection</a></li>
+    <li><a class="collection-link" href="https://vrunda702.github.io/Personal-Website-Collection/">Collection</a></li>
     <li><a href="https://vrunda702.github.io/Personal-Website-About/">About</a></li>
-    <li><a class="active" href="#">Contact Us</a></li>
-  </ul>
+    <li><a href="#checkout">Checkout</a></li>
+    <li><a href="contact.html">Contact</a></li> <!-- Link to Contact Page -->
+</ul>
 
-  <!-- Header Section -->
-  <div class="header">
+<div class="header">
     <h1>Contact Us</h1>
-  </div>
+</div>
 
-  <!-- Content Section -->
-  <div class="content">
-    <div class="info-box">
-      <p>Email us: <a href="mailto:v2popawala@uwaterloo.ca">v2popawala@uwaterloo.ca</a></p>
+<!-- Contact Information -->
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Email Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p><a href="mailto:info@pannasfashion.com">info@pannasfashion.com</a></p>
     </div>
 
-    <div class="info-box">
-      <p>DM us: <a href="https://instagram.com/pannas_fashionboutique" target="_blank">@pannas_fashionboutique</a></p>
+    <div class="contact-info">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media!</p>
+        <p><a href="https://www.instagram.com/pannasfashion" target="_blank">Instagram</a></p>
     </div>
 
-    <div class="info-box">
-      <p>Call us: <a href="tel:+15193926742">519-392-6742</a></p>
+    <div class="contact-info">
+        <h2>Visit Us</h2>
+        <p>Check out our store for more!</p>
+        <p><a href="https://www.google.com/maps" target="_blank">Find Us on Google Maps</a></p>
     </div>
-  </div>
+</div>
+
 </body>
 </html>
+
 
 
 
