@@ -65,6 +65,7 @@
       margin: 40px auto;
       padding: 20px;
       text-align: center;
+      overflow: hidden; /* Clear floats */
     }
 
     .info-box {
@@ -72,9 +73,10 @@
       border: 1px solid #ffc2d1;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 20px auto;
+      margin: 20px;
       padding: 20px;
-      width: 70%;
+      width: 30%; /* Fixed width for floating layout */
+      float: left; /* Float each box to the left */
     }
 
     .info-box p {
@@ -92,6 +94,15 @@
 
     .info-box a:hover {
       color: #6b4d57;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .info-box {
+        float: none; /* Cancel float for small screens */
+        width: 90%; /* Full width for smaller devices */
+        margin: 20px auto;
+      }
     }
   </style>
 </head>
@@ -125,6 +136,7 @@
   </div>
 </body>
 </html>
+
 
 
 
